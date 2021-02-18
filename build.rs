@@ -7,6 +7,7 @@ fn main() {
 
     // Tell cargo to tell rustc to link the cef
     // shared library.
+    println!(concat!("cargo:rustc-link-search=", env!("CEF_PATH"), "/Release"));
     println!("cargo:rustc-link-lib=cef");
 
     // Tell cargo to invalidate the built crate whenever the wrapper changes
