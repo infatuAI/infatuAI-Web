@@ -20,7 +20,7 @@ fn main() {
         // bindings for.
         .header("wrapper.h")
 
-        // inform clang of the location of the cef headers
+        // Inform clang of the location of the cef headers
         .clang_arg(concat!("-I", env!("CEF_PATH")))
 
         // Tell cargo to invalidate the built crate whenever any of the
