@@ -8,10 +8,10 @@ fn main() {
     // Tell cargo to tell rustc to link the cef
     // shared library.
     println!(concat!("cargo:rustc-link-search=", env!("CEF_PATH"), "/Release"));
-    println!("cargo:rustc-link-lib=cef");
+    //println!("cargo:rustc-link-lib=cef");
 
     // TODO: On Mac you need this...
-    // println!("cargo:rustc-link-framework=cef");
+    println!("cargo:rustc-link-framework=cef");
 
     // Tell cargo to invalidate the built crate whenever the wrapper changes
     println!("cargo:rerun-if-changed=wrapper.h");
