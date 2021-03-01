@@ -1,6 +1,6 @@
 # infatuAI Web
 
-Rust bindings for Chromium integrated with Bevy the data-driven game engine. With 3d mode and comic book mode. Tested on Linux and Mac. With aspirations to add Windows support in the future.
+Rust bindings for Chromium integrated with Bevy the data-driven game engine via GStreamer. With 3d mode and comic book mode. Tested on Linux and Mac. With aspirations to add Windows support in the future.
 
 ## Linux x86_64
 
